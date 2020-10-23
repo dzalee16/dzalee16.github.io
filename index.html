@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MJ Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Header with navbar-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg">
+              <p class="navbar-brand" id="logo">MJ</p>
+              <button
+                class="navbar-toggler mb-2"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navBarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navBarMenu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-center" href="#aboutMe">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center" href="#projects">Project</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Section showCase of intrducing myself-->
+    <section id="showCase">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <h2>
+              Hello, my name is Mladen Jovic. I am Front-End Developer living in
+              Nis, South of Serbia.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section with the timer-->
+    <section id="timer">
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="col-sm-auto" id="clock">
+            <h1 id="showClock"></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About me-->
+    <section id="aboutMe">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-auto">
+            <h3>About:</h3>
+            <p>
+              I am engineer for health and safety at work by formal education.
+              Before one year I start to learn about web development (Front-End)
+              as a self-taugth. <br />
+              Successfully finish
+              <a href="https://itbootcamp.rs">IT Bootcamp</a> course of
+              re-qualification during the 12 weeks, 10 weeks JavaScript + 2
+              weeks React.
+            </p>
+            <p>
+              I am opet to work and currently looking for internship.
+              <br />
+              Currently I am working and learing on JavaScript library React.
+            </p>
+            <h3>Skill set:</h3>
+            <div id="skillSet">
+              <p>-<span class="tech">HTML5</span> -> basic to intermediate</p>
+              <p>-<span class="tech">CSS3</span> -> basic to intermediate</p>
+              <p>
+                -<span class="tech">Responsive Web Design</span> -> basic to
+                intermediate
+              </p>
+              <p>
+                -<span class="tech">JavaScript (ES6)</span> -> basic to
+                intermediate
+              </p>
+              <p>
+                -<span class="tech">Firebase & NoSQL database</span> -> basic
+              </p>
+              <p>-<span class="tech">Git</span> -> basic</p>
+              <p>-<span class="tech">React</span> -> basic</p>
+              <p>-<span class="tech">Bootstrap 4</span> -> basic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section with my projects-->
+    <section id="projects">
+      <div class="container">
+        <h3>Projects:</h3>
+        <div class="row justify-content-lg-center">
+          <!--1-->
+          <div class="col-lg-8">
+            <div class="card">
+              <img
+                src="images/Chat_Room.jpg"
+                alt="ChatRoom image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chat Room</h5>
+                <p class="card-text">
+                  This was my final project at the IT Bootcamp, and we have our
+                  last week to work on it. In this project we use OOP, async
+                  functions, Firestore database, modules, Responsive Web Design,
+                  ect. Go and try to chat. :D
+                </p>
+                <a
+                  href="https://final-project-it-bootcamp.web.app/#"
+                  target="_blank"
+                  class="btn"
+                  >Go to project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="col-lg-8">
+            <div class="card">
+              <img
+                src="images/Memory_Game.png"
+                alt="ChatRoom image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Memory Game</h5>
+                <p class="card-text">
+                  In the half of our IT Bootcamp course, we have one week
+                  without classrooms, and on that week our assigment was to make
+                  Memory Game. Flip all the cards and make best results. :D
+                </p>
+                <a
+                  href="https://dzalee16.github.io/IT_Bootcamp_Memory_Game/"
+                  target="_blank"
+                  class="btn"
+                  >Go to project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--3-->
+          <div class="col-lg-8">
+            <div class="card">
+              <img
+                src="images/Eacth_a_Sketch.png"
+                alt="ChatRoom image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Etch-a-Sketch</h5>
+                <p class="card-text">
+                  This is one of the project in the section JavaScript of The
+                  Odin Project curriculum. If you want go and make some skatch.
+                  :D
+                </p>
+                <a
+                  href="https://dzalee16.github.io/Etch_a_Sketch/"
+                  target="_blank"
+                  class="btn"
+                  >Go to project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--4-->
+          <div class="col-lg-8">
+            <div class="card">
+              <img
+                src="images/Rock_Paper_Scissors.png"
+                alt="ChatRoom image"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rock-Paper-Scissor</h5>
+                <p class="card-text">
+                  Ahh, so many time in my childhood I play this game. Every time
+                  when me and my frineds don't know who will do something we
+                  will play the game. So usefull. And this is my first
+                  JavaScript project. In that moment I was so happy because I
+                  will make the game to play against computer, big differenties
+                  from my childhood.
+                </p>
+                <a
+                  href="https://dzalee16.github.io/Rock_Paper_Scissors/"
+                  target="_blank"
+                  class="btn"
+                  >Go to project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3" id="myName">
+            <p>Created by Mladen Jovic</p>
+          </div>
+          <div class="col-lg-3 ml-auto" id="links">
+            <a
+              href="https://www.linkedin.com/in/mladen-jovic-873713166/"
+              target="_blank"
+              class="fa fa-linkedin"
+            ></a>
+            <a
+              href="https://github.com/dzalee16"
+              target="_blank"
+              class="fa fa-github"
+            ></a>
+            <a
+              href="https://www.instagram.com/dzale_16/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
