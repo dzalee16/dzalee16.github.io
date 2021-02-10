@@ -1,21 +1,25 @@
 //DOM
-let divClock = document.getElementById("clock");
-let h1 = document.getElementById("showClock");
+let textWrapper = document.querySelector(".text");
 
-let showTime = () => {
-  let date = new Date();
-  let hours = date.getHours();
-  let min = date.getMinutes();
-  let sec = date.getSeconds();
-  hours = String(hours);
-  min = String(min);
-  sec = String(sec);
-  let clock = `${hours.padStart(2, "0")}:${min.padStart(2, "0")}:${sec.padStart(
-    2,
-    "0"
-  )}`;
-  h1.textContent = clock;
-  divClock.appendChild(h1);
-};
+//textWrapper
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='text'>$&</span>"
+);
 
-setInterval(showTime, 1000);
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".text",
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i + 1),
+  })
+  .add({
+    targets: ".text-showCase",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
